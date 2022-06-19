@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.surco-logo img{
+    width: 160px; 
+    padding-left: 30px; 
+    padding-top: 10px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+    
+    
+}
+li{
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 10px;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 16px;
+}
+li:hover{
+    content: '';
+    background: rgb(43, 42, 42);
+}
+.checkbtn{
+    color: white;
+    font-size: 25px;
+    padding-top: 8px;
+    cursor: pointer;
+    margin-right: 30px;
+    display: none;
+    
+}
+#check{
+    display: none;
+}
+
+.heading{
+    background: rgb(22, 22, 114);
+    padding: 18px 0;
+    color: rgb(238, 228, 228);
+    font-size: 0.9rem;
+}
+.heading h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+/* this is slider */
+
+ .main-frame{
+    width: 100%;
+    height: 560px;
+    background-image: url(pics/Carrom-banner-2.jpg);
+    animation: slider 8s infinite linear;
+    background-size: 100% 100%;
+}
+
+@keyframes slider{
+    0%{ background-image: url(pics/Carrom-banner-2.jpg);}
+    45%{ background-image: url(pics/Carrom-banner-3.jpg);}
+    75%{ background-image: url(pics/Carrom-banner2-1-1.jpg);}
+} 
+
+/*-----------CARROM BOARDS----------*/
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom:20px ;
+  font-size: 3rem;
+  color: rgb(27 27 102);
+}
+.suri-boards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.boards{
+  display: inline-block;
+  margin: auto;
+ }
+.boards img{
+  width: 350px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.speedo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 20px 0;
+  background: #49b949;
+  border-radius: 5px;
+  color: #ffeece;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.speedo:hover{
+  background: #2a5f06;
+}
+
+/* -----strikers-----*/
+.carrom-strikers{
+ background-color: rgb(11, 11, 109);
+}
+.suri-strikers{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.header-striker{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom:10px;
+  padding: 30px 0;
+  font-size: 3rem;
+  color: rgb(27 27 102);
+  color: #ffeece;
+}
+.strikers{
+  display: inline-block;
+  margin: auto;
+  padding: 50px 40px;
+  background-color: #ffeece;
+ }
+ .striker-name{
+   display: flex;
+   justify-content: center;
+   padding: 20px 0;
+   font-size: 2.5rem;
+   font-weight: 700;
+   color:  #625757;
+ }
+ .shop-btn{
+  background: #49b949;
+  color: #ffeece;
+  padding: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  position: relative;
+  left: 30px;
+  transition: 0.5s;
+ }
+ .shop-btn:hover{
+  background: #2a5f06;
+}
+
+.content{
+  width: 100%;
+  height: 450px;
+  background-image: url(pics/istockphoto-1290649703-612x612.jpg); 
+  background-position: center;
+  background-size: 100% 140%;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-logo{
+  display: flex;
+  flex-direction: column;
+  
+}
+.content-btn{
+  background-color: #49b949;
+  color: #ffeece;
+  margin-top: 25px; 
+  width: 180px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  transform: translateX(50px);
+  transition: 0.6s;
+}
+.content-btn:hover{
+  content: '';
+  background-color: #2a5f06;
+}
+
+.testimonals{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffeece;
+  color: #555050;
+  padding: 50px 200px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.testimonals::before{
+    content: '';
+    background: #555050;
+    height: 3px;
+    width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    transform: translateY(73px);
+}
+.testimonals h1{
+  font-family: "Roboto", Sans-serif;
+  font-size: 3.5rem;
+}
+.testimonals p{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.testimonals b{
+  font-size: larger;
+}
+.whatsapp-btn{
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  z-index: 1;
+}
+
+.located-units{
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffeece;
+  padding: 30px 0;
+}
+.unit-1{
+  width: 560px;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+.unit-2{
+  padding-top: 20px;
+  width: 560px;
+  margin-left: 100px;
+}
+.unit-1 h5{
+  font-size: 25px;
+  font-weight: 100;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.unit-2 h5{
+  font-size: 25px;
+  font-weight: 100;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
